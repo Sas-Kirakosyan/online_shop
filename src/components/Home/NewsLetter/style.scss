@@ -1,0 +1,61 @@
+.newsletter{
+  padding: 30px 0;
+  background-color: #D5D5D5;
+  text-align: center;
+  p{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: playfair display;
+    margin-right: 30px;
+  }
+  button{
+    text-transform: capitalize;
+    border-radius: 0;
+    background: #ae0814;
+    border: none;
+    color: #fff;
+    padding: 11px 15px;
+    font-size: 14px;
+    &:hover{
+      background-color: #be3943;
+    }
+  }
+  input{
+    height: 41px;
+    padding-left: 15px;
+    border: none;
+    width: 430px;
+    background-color: #fff;
+    &::placeholder{
+      color: #ddd
+    }
+    &:focus{
+      -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow:  0 1px 5px rgba(0, 0, 0, 0.1);
+      box-shadow:  0 1px 5px rgba(0, 0, 0, 0.1);
+      outline: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletter{
+    div input{
+      width: 286px;
+      margin-bottom: 20px;
+    }
+  }
+}
+@media (min-width: 560px) and (max-width: 868px) {
+ .newsletter{
+  div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input{
+      margin-bottom: 20px;
+    }
+  }
+ } 
+}

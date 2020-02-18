@@ -1,0 +1,20 @@
+.container-about{
+  width: 70%;
+  margin: 200px auto 0;
+  @media (max-width: 992px) {
+      margin-top: 0;
+  }
+  h1{
+    margin-top: 40px;
+    color: #333333;
+    font-weight: normal;
+  }
+  p{
+    color: #888;
+    margin-top: 20px;
+    font: 1.2em/1.4em georgia, serif;
+  }
+  .text{
+    color: #333333;
+  }
+}
